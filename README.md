@@ -63,7 +63,7 @@
         
         public string TotalAuthors { get; set; }
 
-## the Book Controller have every functions for access books
+## the Book Controller having every functions for add delete update and search in books
         // getting the 'AccessBook' model for add edit delete and search
         static AccessBook accessBook = new AccessBook();
 
@@ -112,6 +112,7 @@
 
         [HttpPost]
         public Dictionary<string, object> DeleteBook(int? id)
+        
         [HttpPost]
         public Dictionary<string, object> SearchBookByTitle(string sometext)
 
